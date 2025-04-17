@@ -58,7 +58,7 @@ namespace Boxes
             if (_boxes.Count == 0)
             {
                 Console.WriteLine("No boxes available to find the biggest one.");
-                return; // Added return to prevent further execution
+                return;
             }
 
             var biggestBox = _boxes.OrderByDescending(b => CalculateVolume(b)).First();
